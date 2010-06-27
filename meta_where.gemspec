@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{meta_where}
-  s.version = "0.5.1"
+  s.version = "0.5.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Ernie Miller"]
@@ -39,7 +39,7 @@ Gem::Specification.new do |s|
      "lib/meta_where/compound.rb",
      "lib/meta_where/condition.rb",
      "lib/meta_where/join_dependency.rb",
-     "lib/meta_where/operator.rb",
+     "lib/meta_where/operator_list.rb",
      "lib/meta_where/relation.rb",
      "lib/meta_where/utility.rb",
      "meta_where.gemspec",
@@ -58,6 +58,7 @@ Gem::Specification.new do |s|
      "test/fixtures/projects.yml",
      "test/fixtures/schema.rb",
      "test/helper.rb",
+     "test/test_operator_list.rb",
      "test/test_relations.rb"
   ]
   s.homepage = %q{http://metautonomo.us/projects/metawhere/}
@@ -74,6 +75,7 @@ Gem::Specification.new do |s|
      "test/fixtures/project.rb",
      "test/fixtures/schema.rb",
      "test/helper.rb",
+     "test/test_operator_list.rb",
      "test/test_relations.rb"
   ]
 
