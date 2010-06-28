@@ -3,6 +3,7 @@ module MetaWhere
     def self.symbol_operators(mode = nil)
       symbol_map = {:eq => '[]', :not_eq => '^', :in => '+', :not_in => '-', :matches => '=~', :not_matches => '!~', :gt => '>', :gteq => '>=', :lt => '<', :lteq => '<='}
       if mode == :humanize            
+        symbol_map = {:eq => '=', :not_eq => '!=', :in => 'in', :not_in => 'not in', :matches => '=~', :not_matches => '!=~', :gt => '>', :gteq => '>=', :lt => '<', :lteq => '<='}        
         humanized_map = {}
         symbol_map.each_pair do |k, v|
           humanized_map.merge!(humanize_symbol(k) => v)
